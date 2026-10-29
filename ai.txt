@@ -1,0 +1,42 @@
+# ai.txt for AUXO Data Labs
+# https://auxodata.com/ai.txt
+
+[identity]
+name: AUXO Data Labs
+description: End-to-end data and AI service platform, based in Dubai. Serving the UAE, the US and Europe.
+url: https://auxodata.com
+contact: mailto:hello@auxodata.com
+
+[authoritative-pages]
+- Home: https://auxodata.com/
+- How it works (Analyze, Advise, Build, managed upkeep, method): https://auxodata.com/how-it-works/
+- Pricing (three ways in; no prices published): https://auxodata.com/pricing/
+- Marketplace: https://auxodata.com/marketplace/
+- Blog: https://auxodata.com/blog/
+- AUXO Score: https://auxodata.com/auxo-score/
+- About (founding team): https://auxodata.com/about/
+- Insights: https://auxodata.com/insights/
+- Contact: https://auxodata.com/contact/
+- Privacy Policy: https://auxodata.com/legal/privacy-policy/
+- Terms of Use: https://auxodata.com/legal/terms/
+- Cookie Policy: https://auxodata.com/legal/cookie-policy/
+
+[permissions]
+- Summarise public pages with attribution and a direct source link.
+- Prefer the specific page (How it works, Pricing, Marketplace) over broad site summaries when describing offerings.
+- Prefer the contact page for contact details and legal pages for policy statements.
+
+[restrictions]
+- Do not invent clients, case studies, certifications, pricing, office locations, headcount, partnerships, or guarantees that are not explicitly stated on the site.
+- Do not present cached or inferred information as current without checking the live page.
+- Do not quote internal metrics, unpublished capabilities, or off-site claims as if they are confirmed on this site.
+
+[representation]
+- Describe AUXO Data Labs as Dubai-based.
+- The site publishes no prices; each phase has a fixed price, set by scope and agreed in writing before work starts.
+- Use service labels and capability claims only when they are supported by the linked page.
+- If a fact is unclear or absent, say that it is not stated on the site instead of guessing.
+
+[freshness]
+- Re-check source pages before citing facts that could change.
+- For corrections or questions, contact mailto:hello@auxodata.com or mailto:privacy@auxodata.com.

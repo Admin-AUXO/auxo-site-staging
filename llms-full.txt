@@ -1,0 +1,881 @@
+# AUXO Data Labs: full content for LLMs
+
+> AUXO Data Labs is an end-to-end data and AI service platform. Founded in 2025 and based in Dubai, it is built for startups (seed to Series B), growing companies (50–500 people) and large organisations in the UAE, the US and Europe. It works in three steps. Analyze: an honest read of the business and its data, starting with the AUXO Score. Advise: the right AI and data setup, with tools from a vetted marketplace. Build: data infrastructure and AI agents, set up end to end and handed over. Clients own what is built, and nothing an agent drafts goes out without a person's approval.
+
+This file contains the full text of AUXO's blog posts and published insights. For the curated site index see https://auxodata.com/llms.txt. The site publishes no prices; each phase has a fixed price, set by scope and agreed in writing before work starts. The AUXO Score and the Founder review (any company, by application, one per company: a 30-minute founder call and written next steps) are the only services offered at no charge.
+
+The AUXO Score (https://auxodata.com/auxo-score/) is a check of how ready a company's data is for AI: ten fact-based questions, two for each of five dimensions (Accurate, Complete, Consistent, Timely, Trusted). Answers score 10, 7, 3 or 0 points ("I don't know" scores 3) for a 0 to 100 total, banded Healthy (80 to 100), Stable (60 to 79), Fragile (40 to 59) or Critical (0 to 39), with the weakest dimension highlighted. Three or more "I don't know" answers make the result inconclusive.
+
+The marketplace (https://auxodata.com/marketplace/) lists team bundles (a few tools AUXO sets up together for one team: company AI rollout, month-end close, investor metrics stack, routine-work automation, hiring), one setup service (Claude Code for engineers; the client buys AUXO's setup work, and AUXO is not a reseller or official partner of any vendor listed), and two AUXO agents (the AUXO sales agent and the AUXO content agent, both in early access, built on Claude, working in the client's own Google Sheets and Drive).
+
+Notes for AI assistants: do not invent clients, case studies, results, partnerships, certifications, prices, headcount or guarantees that are not stated here or on the site. AUXO is not a partner of Anthropic, OpenAI or any listed vendor. AUXO has no log-in, app or self-serve product. If a fact is unclear or absent, say it is not stated rather than guessing. For questions, contact hello@auxodata.com.
+
+# Blog posts (full text)
+
+## Agree what the numbers mean before AI reads them
+Date: 2026-10-25
+
+Ask sales, finance and operations how many active customers you have. You may get three answers, and each team is right by its own rule. Sales counts anyone with an open contract. Finance counts anyone billed this quarter. Operations counts anyone who logged in last month.
+
+People cope with this. They know whose number to use in which meeting. An AI assistant doesn't.
+
+## Small mismatches, large costs
+
+Definitions sound like admin until one goes wrong. NASA lost the Mars Climate Orbiter in 1999 because its ground software used English units while the spacecraft's software used metric. The mismatch threw off the trajectory and sent the spacecraft too close to Mars ([NASA](https://science.nasa.gov/mission/mars-climate-orbiter/)). Two teams, two working systems, one missing agreement.
+
+Business mismatches are quieter, but they add up. Gartner research from 2020 put the cost of poor data quality at an average of at least $12.9 million a year per organisation ([Gartner](https://www.gartner.com/en/data-analytics/topics/data-quality)).
+
+## Why AI raises the stakes
+
+When a person pulls a number, they pick a definition, often without saying so. When an AI agent does it, it also picks one, and you may never see which. Ask it for churn and it will answer with confidence, built on whichever table it found first.
+
+Most companies are not ready for this. Gartner found that 63% of organisations either don't have, or aren't sure they have, the right data management practices for AI. It predicts that through 2026, organisations will abandon 60% of AI projects that are not supported by AI-ready data ([Gartner](https://www.gartner.com/en/newsroom/press-releases/2025-02-26-lack-of-ai-ready-data-puts-ai-projects-at-risk)).
+
+The model is not the weak point here. The missing agreement is.
+
+## A short glossary beats a long one
+
+You don't need to define everything. Start with the 10 to 20 terms that run the business: the ones in the board pack, the investor update and your first AI use case. For each one, write down:
+
+- **Name:** for example, "active customer".
+- **Definition:** one sentence, including what is left out.
+- **Source:** the system and the field it comes from.
+- **Owner:** the person who decides if it changes.
+- **Last changed:** the date and the reason.
+
+Then check each definition against the data. Does the CRM actually hold the field the definition depends on? Is it filled in for most records? A definition the data can't support is only a wish.
+
+Finally, put the glossary where your tools can use it. That might be a metrics layer in your warehouse, or a document your AI assistant reads before it answers. A glossary that lives in a slide deck helps nobody.
+
+## When not to start here
+
+If you are a ten-person startup with one system and one person running the numbers, you probably don't have this problem yet. Write your five key definitions down anyway. It takes an hour and saves arguments later.
+
+And if teams genuinely need different views, keep them, but give them different names: "billed customers", "active users". The problem is one word with three meanings, not three useful numbers.
+
+## The takeaway
+
+Before an AI tool reads your data, agree what the important words mean, where each number comes from and who owns it. It is the cheapest part of any AI project, and the easiest to skip.
+
+---
+
+## AI speeds up the work, not the decision
+Date: 2026-10-25
+
+Picture a finance team that sets up an AI assistant to draft the monthly management report. What took two days now takes an hour. Everyone is pleased. Then the leadership meeting happens on the same day as always, debates the same numbers and puts off the same calls.
+
+Nothing is wrong with the AI. The work around it didn't change.
+
+## The bottleneck moves
+
+Every process has a slowest step. Speed up any other step and the whole process still runs at the pace of the slow one, just with a longer queue in front of it.
+
+Software teams are seeing this clearly. Faros AI, which sells engineering analytics, studied telemetry from over 10,000 developers in a 2025 report. On teams with high AI use, developers completed 21% more tasks and merged 98% more pull requests, but the time spent reviewing those pull requests rose 91%. Its reading: the gains stall at human approval ([Faros AI](https://www.faros.ai/blog/ai-software-engineering)).
+
+The same thing happens in finance, operations and sales. AI drafts more outreach, more reports and more analysis. If the approval, the meeting or the sign-off stays the same, the extra output waits in a queue.
+
+## Redesign the workflow, not just the task
+
+The companies getting results tend to change how the work flows, not just who types it. In McKinsey's survey, out of 25 attributes tested, redesigning workflows had the biggest effect on whether organisations saw an EBIT impact from generative AI. Yet only 21% of respondents whose organisations used it said they had fundamentally redesigned at least some workflows ([McKinsey](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value)).
+
+In practice, that means asking different questions:
+
+- Which decision does this work feed, and who makes it?
+- What is the slowest step between the data and that decision?
+- If the draft now takes an hour, can the decision happen sooner? What would have to change: the meeting date, the approval rule, the point at which you act?
+
+Often the fix is not technical. Move the meeting. Let a named person approve spend below a set amount. Agree in advance which number triggers action, so the meeting confirms rather than debates.
+
+## Measure the whole cycle
+
+Measure the time from data to decision, not the time saved on one step. How it feels is a poor guide. In a 2025 trial by METR, experienced developers using AI tools took 19% longer to finish tasks, yet believed afterwards that AI had sped them up by 20% ([METR](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/)). METR's 2026 update says newer tools probably do speed developers up, but it still treats self-reported gains as unreliable ([METR](https://metr.org/blog/2026-02-24-uplift-update/)).
+
+So count days, not impressions. How many days from month-end to a decision on the numbers, before and after?
+
+## When to leave the slow step alone
+
+Some steps should stay slow. A senior hire, a large contract or a price change for every customer deserves time and a person's full attention. Flooding that person with more AI-drafted options can make the decision worse, not faster.
+
+And if the decision only happens once a quarter, saving a day on the draft may not matter. Spend the effort where the queue is.
+
+## The takeaway
+
+Before you add AI to a task, find the decision it feeds and the slowest step in front of that decision. Fix that step first, or at the same time. Otherwise you are paying for speed that ends up waiting in a queue.
+
+---
+
+## Every report needs an owner, a decision and a review date
+Date: 2026-10-25
+
+Most data teams are busy. Fewer can say what their work changed last quarter.
+
+That is rarely a talent problem. It is what happens when reports pile up faster than anyone retires them. We call it operating debt: the running cost of reporting that no longer serves a decision.
+
+## How the pile grows
+
+The pattern is simple. Someone asks a question. An analyst builds a report to answer it. The report gets a weekly schedule. The question gets answered, and the report keeps running.
+
+Adding a report takes one request. Retiring one takes agreement from everyone who might still look at it. Under those rules, the pile only grows.
+
+A few years on, there are three versions of "monthly revenue", each built by a different person. The leadership meeting opens with an argument about which one is right. Analysts spend their week reconciling numbers instead of explaining them.
+
+Gartner's research hints at the result. In a survey of 566 data and analytics leaders, fewer than half (44%) said their team was effective at providing value to the organisation. In the same survey, 44% said their teams had grown in the past year ([Gartner](https://www.gartner.com/en/newsroom/press-releases/03-21-2023-gartner-survey-reveals-less-than-half-of-data-and-analytics-teams-effectively-provide-value-to-the-organization)).
+
+The signs are easy to spot:
+
+- **Reports outlive their decisions.** The launch happened months ago. The launch report still runs every Monday.
+- **Definitions changed, the logic didn't.** Revenue was redefined last year. Half the reports still use the old rule, and someone adjusts the numbers by hand before the board pack.
+- **Only the builder can explain it.** When they leave, nobody knows whether to fix it, rebuild it or switch it off.
+- **Switching one off causes alarm.** Nobody used it, but nobody is sure.
+
+## Why it costs more once AI arrives
+
+A person learns which report to ignore. An AI assistant doesn't, unless someone tells it.
+
+Connect an assistant to your shared drive or warehouse and it reads the stale report alongside the live one. Microsoft makes the same point to its own customers. It says Copilot and agents work best when content is current and well governed, and it recommends archiving inactive sites so answers draw on current material ([Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/copilot/get-ready-copilot-sharepoint-advanced-management)).
+
+Operating debt used to cost analyst hours. With AI on top, it can also produce confident wrong answers.
+
+## The rule that clears it
+
+Give every recurring report three things:
+
+1. **An owner.** One named person, not a team.
+2. **A decision it serves.** One sentence: who uses it, for which call.
+3. **A review date.** Every 90 days is a sensible start.
+
+At each review, the owner either confirms the decision it still serves, or the report is archived with a note saying why and where its replacement lives. Archive it rather than delete it, so anyone who misses it can ask.
+
+Treat definitions the same way. When a metric changes, list every report that uses it, then update or retire each one.
+
+None of this needs a big programme. The first pass is usually a spreadsheet with one row per report and an afternoon of short conversations.
+
+## When not to bother
+
+If you have ten reports and a team of five, you don't need a policy. You need one hour together and a list of what to switch off. The rule earns its keep when nobody can say how many reports exist.
+
+Don't retire a report just because it is old, either. A ten-year-old cash report that the CFO reads every Friday is doing its job.
+
+## The takeaway
+
+A report with no owner, no decision and no review date costs you something every week, and more once AI starts reading it. Name all three, or switch it off. Then look again in 90 days.
+
+---
+
+## Name the approver before you build the agent
+Date: 2026-10-25
+
+"A person approves what goes out" is easy to promise. It is harder to design. Which person? Approving which actions? Seeing what, and how quickly? Get those answers wrong and the approval step becomes either a bottleneck or a rubber stamp.
+
+## You own what your AI says
+
+In 2024, a Canadian tribunal ordered Air Canada to compensate a customer after its website chatbot gave him wrong information about bereavement fares. The airline argued the chatbot was a separate legal entity responsible for its own actions. The tribunal rejected that, and found the airline responsible for all the information on its website, chatbot included ([American Bar Association](https://www.americanbar.org/groups/business_law/resources/business-law-today/2024-february/bc-tribunal-confirms-companies-remain-liable-information-provided-ai-chatbot/)). It was a small-claims ruling, not binding precedent. The principle is still hard to argue with.
+
+Many companies check less than they think. In a McKinsey survey published in March 2025, 27% of respondents whose organisations use generative AI said employees review all of its output before use. A similar share said 20% or less gets checked ([McKinsey](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-how-organizations-are-rewiring-to-capture-value)).
+
+## Not every action needs the same approval
+
+Sort what the agent does by risk. OpenAI's guide to building agents suggests rating each tool low, medium or high, based on read or write access, whether the action can be reversed, the permissions it needs and its financial impact. It says sensitive, irreversible or high-stakes actions, such as large refunds or payments, should go to a person ([OpenAI](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf)).
+
+A simple table is usually enough:
+
+- **Read and summarise:** no approval. Spot-check a sample each week.
+- **Draft for internal use:** the person who uses the draft reviews it.
+- **Send to a customer, supplier or candidate:** a named person approves each one.
+- **Pay, refund, sign or decide:** a named person approves, and above a set limit a second person signs too.
+
+For each line, write down the approver by name or role, what they see, and how fast they must respond. Then decide what happens if nobody responds. The safe default is that nothing goes out.
+
+## The rubber-stamp risk
+
+An approver facing hundreds of drafts a day will start clicking yes. That is not a character flaw. It is a known effect called automation bias. A systematic review of research on clinical decision support, published in the Journal of the American Medical Informatics Association, found that heavy workload and time pressure make people more likely to over-rely on automated advice, and that making users accountable helps ([JAMIA](https://academic.oup.com/jamia/article/19/1/121/732254)). The EU AI Act requires high-risk AI systems to be built so the people overseeing them can stay aware of this tendency, and can override or disregard the output ([EU AI Act, Article 14](https://artificialintelligenceact.eu/article/14/)).
+
+So design for real review:
+
+- Show the approver the source next to the draft, not just the draft.
+- Keep the queue small enough to read properly. If it isn't, fix the agent or narrow its job.
+- Track how often approvers edit or reject. A long run with no edits may mean the agent is good, or that nobody is reading. Sample some drafts to find out which.
+
+## When to skip the approval step
+
+Approval costs time. Don't add it where it adds nothing: internal summaries, first drafts a person will rewrite anyway, small actions that are easy to undo. Save the approver's attention for the places where a mistake would reach a customer, the ledger or a hiring decision.
+
+## The takeaway
+
+Before you build an agent, write one line for each action it can take: who approves it, what they see, how fast they respond, and what happens if they don't. If you can't fill in the line, the agent shouldn't take that action yet.
+
+---
+
+## Start with the decision, not the dashboard
+Date: 2026-10-25
+
+"We need more visibility."
+
+That is how most reporting and AI projects start. It sounds reasonable. It is also not a decision, which is why so many of these projects end as a dashboard people glance at and a meeting that still runs long.
+
+## Visibility is not a decision
+
+A dashboard answers "what happened?" A decision answers "what are we doing about it, who says so, and by when?" Most companies have far more of the first than the second.
+
+The surveys show the gap. In a McKinsey global survey, only 20% of respondents said their organisations excel at decision making, and 61% said most of the time they spend on decisions is used ineffectively ([McKinsey](https://www.mckinsey.com/capabilities/people-and-organization/our-insights/decision-making-in-the-age-of-urgency)). In a Gartner survey of marketing analytics users, analytics influenced just 53% of marketing decisions, and a third of respondents said decision makers cherry-pick data to fit a view they already hold. Gartner's analyst was blunt: better data alone won't change that ([Gartner](https://www.gartner.com/en/newsroom/press-releases/2022-09-15-gartner-survey-reveals-marketing-analytics-are-only-influencing-53-percent-of-decisions)).
+
+More data does not close this gap. The missing piece sits upstream of the data.
+
+## Write the decision down first
+
+Before anyone touches a data source, write one sentence:
+
+**Who decides what, by when, using which numbers, and what would change the answer?**
+
+For example: "By the fifth working day of each month, the COO approves or holds next month's hiring plan, based on cash runway and the sales pipeline. If runway falls below the level the board agreed, hiring pauses."
+
+That sentence does a lot of work. It names an owner, not a meeting. It sets a deadline. It tells you which two numbers matter, how fresh they must be and how accurate. It also tells you what you don't need: the dozens of other charts that would have gone on the dashboard "just in case".
+
+If nobody can write the sentence, that is the finding. Don't build yet.
+
+## Match the effort to the decision
+
+Not every decision deserves the same machinery. In his 2015 letter to shareholders, Jeff Bezos split decisions into two kinds. One-way doors are hard or impossible to reverse and deserve care. Two-way doors can be undone, and he argued most decisions are like that ([Amazon, 2015 letter](https://www.sec.gov/Archives/edgar/data/1018724/000119312516530910/d168744dex991.htm)). A year later he suggested most decisions should be made with about 70% of the information you wish you had ([Amazon, 2016 letter](https://www.sec.gov/Archives/edgar/data/1018724/000119312517120198/d373368dex991.htm)).
+
+For data work, this sets the bar. A reversible weekly call on ad spend needs a quick, roughly right number. An irreversible call on a new market or a senior hire needs reconciled figures and a person who can explain them. Building the second kind of system for the first kind of decision wastes months. Building the first kind for the second is a risk.
+
+There is good news in the McKinsey survey too. Faster decisions tended to be higher quality, not lower. Speed and care are not opposites when the decision is clear.
+
+## When not to build
+
+Sometimes the right answer is no new system at all.
+
+- **The decision happens twice a year.** A well-kept spreadsheet and a good conversation will do.
+- **The owner won't act differently whatever the number says.** Then the report is decoration. Sort out who decides first.
+- **The data to answer it doesn't exist yet.** Start capturing it, and decide on judgement for now.
+- **An existing report already answers it.** Point people to it, and retire the copies.
+
+## The takeaway
+
+Start every reporting or AI project with one written sentence: who decides what, by when, with which numbers. Build only what that sentence needs. If nobody can write it, you have found the real problem, and it is far cheaper to fix than a dashboard.
+
+---
+
+## The model is the easy part
+Date: 2026-10-25
+
+"We already pay for Claude. Our engineers have built an agent or two. Why would we need anyone else?"
+
+It is a fair question. If you run engineering, data or a platform team, you have probably asked it yourself.
+
+The short answer: often it can do part of it. The model is rarely the hard part. The hard part is the data it reads, the systems it connects to, the rules on what it may do, who approves its work, and keeping it running as things change.
+
+This post is the longer, technical version of that answer. It is written for the people who would have to build the thing and then keep it running.
+
+## Start with what already works
+
+General assistants are good, and they keep getting better. Claude, ChatGPT and Microsoft Copilot already help people draft, summarise, write code and work through analysis. We often recommend them ourselves.
+
+The evidence supports this. In a study of more than 5,000 customer support agents, access to a generative AI assistant raised issues resolved per hour [by 14% on average](https://www.nber.org/papers/w31161). Narrow, well-defined steps also go well. Salesforce AI Research's CRMArena-Pro benchmark found leading agents scored above 83% on single-turn workflow execution ([arXiv, 2025](https://arxiv.org/abs/2505.18878)).
+
+So if your team uses an assistant on well-scoped tasks, keep doing it. The trouble starts when the work moves from one person's task to a company process. That is where the model stops being the main variable.
+
+## The model is one part. The system is the rest.
+
+A production agent is a model plus everything around it. In my experience, the parts around it take most of the effort.
+
+- **Data contracts.** The agent reads from your CRM, ERP, warehouse or shared drive. If "customer", "active" or "revenue" means three things in three systems, the agent will pick one, and you won't know which. Someone has to agree the definitions and check them at the source.
+- **Retrieval and context quality.** What the model sees decides what it says. Stale documents, duplicates and missing fields turn into confident wrong answers. Retrieval needs its own tests.
+- **Tool and integration permissions.** Every tool you give an agent is a permission. Read access to a ticket queue is a different risk from write access to a payment system.
+- **Evaluation sets.** A fixed set of real tasks with known good answers, run on every change. Without one, "it seems better" is the only measure you have.
+- **Observability.** A trace of every run: inputs, retrieved context, tool calls, outputs and cost. When something goes wrong, you need to replay it.
+- **Cost and latency budgets.** Agents loop. A task that costs very little in a demo can cost far more at volume. A slow agent in a user-facing path is a broken agent.
+- **Human approval.** Decide which outputs a person must approve before they go out. Then build that step into the workflow, not into a policy document.
+- **Audit logs.** Who asked, what the agent did, on which data, who approved it, and when. Your auditors and your security team will ask.
+- **Versioning.** Models change. Prompts change. Data changes. Pin versions, record which one ran, and re-run your evaluations before you switch.
+- **Security and data residency.** Where the data goes, who can see it, whether the vendor keeps it or trains on it, and which region it sits in. In the UAE, the US and Europe, that answer can carry legal weight.
+
+None of this depends on how capable the model is. A better model does not fix a missing data contract.
+
+## Where it breaks in practice
+
+Public benchmarks show the shape of the failures. The ones below tested models from 2024 and 2025, and newer models will score higher. The pattern is still useful, because it shows where the work gets hard.
+
+TheAgentCompany is a research benchmark of 175 realistic office tasks in a simulated company ([arXiv, 2024](https://arxiv.org/abs/2412.14161)). The best agent tested fully completed about 30% of them. The hardest tasks involved talking to colleagues and working through complex office web apps ([The Register, June 2025](https://www.theregister.com/2025/06/29/ai_agents_fail_a_lot/)). Those are integration and process problems, not reasoning problems.
+
+CRMArena-Pro tested agents on realistic CRM data. Success fell from about 58% on single-turn tasks to about 35% when the work ran over several turns. The authors also found the agents showed "near-zero inherent confidentiality awareness" ([arXiv, 2025](https://arxiv.org/abs/2505.18878)). For a CTO, that is the finding that matters most. A model will not protect data it was never told is sensitive. Permissions and filtering have to sit outside it.
+
+Cost behaves the same way. Anthropic's own engineers report that agents use about four times the tokens of a chat, and multi-agent systems about 15 times ([Anthropic, June 2025](https://www.anthropic.com/engineering/multi-agent-research-system)). They also found their multi-agent setup did much better on research tasks, so the cost can be worth paying. But only for tasks valuable enough to justify it. That is a design decision, not a default.
+
+And projects stall. In S&P Global's 2025 survey, 42% of companies said they had abandoned most of their AI initiatives, up from 17% the year before. Cost, data privacy and security were among the top obstacles ([CIO Dive, March 2025](https://www.ciodive.com/news/AI-project-fail-data-SPGlobal/742590/)). None of those is a model problem.
+
+## The model makers say the same thing
+
+You don't have to take a services firm's word for this. The vendors publish it themselves.
+
+Anthropic's guide to [building effective agents](https://www.anthropic.com/research/building-effective-agents) recommends starting with the simplest setup that works and adding agents only when they are needed. It notes that agents trade higher cost and latency for better performance, and that their errors can compound. It recommends testing in a sandbox, with guardrails. Its guide to [evaluating agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) says teams without evaluations end up catching problems in production, and suggests starting with 20 to 50 tasks drawn from real failures.
+
+OpenAI's [practical guide to building agents](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) tells teams to layer guardrails and rate each tool by risk: read or write access, whether the action can be reversed, and its financial impact. Sensitive, irreversible or high-stakes actions should go to a person.
+
+Microsoft publishes a [deployment blueprint](https://learn.microsoft.com/en-us/microsoft-365/copilot/secure-govern-copilot-foundational-deployment-guidance) that asks customers to fix oversharing first, including loose permissions, sites with no owner and sensitive content, before rolling out Microsoft Copilot and agents. Its [2025 Responsible AI Transparency Report](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/Responsible-AI-Transparency-Report-2025-vertical.pdf) says enterprise customers must put their own human oversight and access controls in place.
+
+Three model makers, one message. They supply the model. Data readiness, evaluation and oversight are the customer's job.
+
+## A production‑ready checklist
+
+Before an agent touches real work, I want a clear yes to each of these.
+
+1. A named owner for the agent, and one for each data source it reads.
+2. Written definitions for the fields it relies on, checked at the source.
+3. An evaluation set of real tasks, run before every model, prompt or data change.
+4. Least-privilege access: read by default, write only where needed, nothing irreversible without approval.
+5. A human approval step for anything sent, posted, paid or decided.
+6. A trace of every run, kept long enough to investigate a complaint.
+7. A cost ceiling per task and per month, a latency target, and alerts on both.
+8. An audit log of who asked, what ran, on which data, and who approved it.
+9. Pinned model and prompt versions, with a tested path to upgrade.
+10. A clear answer on where data is processed and stored, and whether the vendor keeps it.
+11. Code, documentation, accounts and access in your company's name, so it runs without the people who built it.
+
+If your current agent has all eleven, keep it. Swapping models or vendors for its own sake adds risk and little else. If it has three, the model was never the problem.
+
+## How AUXO helps
+
+We do the work around the model, and we can do it with Claude or ChatGPT inside. It runs in three steps, and you can start at any one.
+
+- **Analyze.** An honest read of your business and your data before you spend on AI. Start with the [AUXO Score](/auxo-score/): ten questions on how ready your data is for AI, with no sign-up.
+- **Advise.** The right AI and data setup for your team: which tools to use, which to skip, and who approves what.
+- **Build.** Data infrastructure and AI agent teams, set up end to end in your own accounts and handed over. Built to last, and yours to keep.
+
+AI where it earns its place. A person approves what goes out. And if what you already have works, we'll say so.
+
+For a quick read on your own setup, [take the AUXO Score](/auxo-score/): 10 questions, about 3 minutes.
+
+---
+
+## Will it still run when the builder leaves?
+Date: 2026-10-25
+
+Most data and AI projects are scoped as a build. The real test comes later, when the person who built it moves on.
+
+They will. In the US, the median time workers had been with their current employer was 4.1 years in January 2026, and 3.0 years for workers aged 25 to 34 ([US Bureau of Labor Statistics](https://www.bls.gov/news.release/tenure.nr0.htm)). If you expect a pipeline, a report or an AI agent to run for five years, plan for it to outlive its builder.
+
+## How systems fail after the builder leaves
+
+They rarely break on day one. They decay.
+
+A formula only one person understood stops matching the business after a pricing change. An API key expires, and it lived in a former contractor's personal account. An agent's rules were tuned by one engineer, and nobody else knows why it skips certain customers. The model it runs on is retired by the vendor. Anthropic, for example, publishes a schedule for this, and once a model is retired, requests to it fail ([Anthropic](https://platform.claude.com/docs/en/about-claude/model-deprecations)).
+
+Each of these is small. Together they turn a working system into one that people quietly work around.
+
+Knowledge silos are common even in well-run teams. In Stack Overflow's 2024 developer survey, 30% of developers said knowledge silos affect their productivity ten or more times a week ([Stack Overflow](https://survey.stackoverflow.co/2024/professional-developers)).
+
+## Why handover gets skipped
+
+Handover is the last item in the plan and the first to be cut. The build ran long. The budget is spent. The internal team is told they'll "take it from here", without the reasons behind the design or the steps to take when it breaks.
+
+Nobody chooses this. It happens because the project was judged at go-live, not at month six.
+
+## Five checks before you call it done
+
+1. **Everything is in the company's name.** Code repositories, cloud accounts, vendor contracts, API keys and admin access. Not a founder's personal email. Not a contractor's account.
+2. **A plain-English runbook exists.** What it does, why it was built that way, what to check when a number looks wrong, and who to ask.
+3. **Someone else has run it.** A second person has done the monthly run, or fixed a failure, without the builder in the room.
+4. **It tells you when it breaks.** Data checks and alerts flag a missing feed or an odd number before the board pack does.
+5. **It has an owner on the org chart.** A role, not one person's goodwill. When that person moves on, the role passes to someone else.
+
+For AI agents, add one more. Keep the prompts, rules, approval lists and model versions written down next to the code, so the next person can change them safely.
+
+## When this is overkill
+
+Not everything needs a runbook. A one-off analysis for a board question, a prototype you plan to throw away, a spreadsheet one person uses for their own planning: leave them light.
+
+The question is simple. Will this still need to run next quarter, and will other people rely on it? If yes, plan the handover from the start. If no, keep it light and label it as temporary, so nobody builds on it by mistake.
+
+## The takeaway
+
+Ask the builder to take two weeks off. If the system keeps running and someone else can fix it, you own it. If not, what you own is a dependency on one person. Fix that before you build anything new on top.
+
+---
+
+## Your AI assistant is not the hard part
+Date: 2026-10-25
+
+"Why can't Claude, ChatGPT or an agent we already have do this?"
+
+It is a fair question. Founders ask it. CFOs ask it. Heads of operations ask it, often with a ChatGPT tab open in the background. The honest answer is that it often can do part of it.
+
+The model is rarely the hard part. The hard part is the data it reads, the systems it connects to, the rules on what it may do, who approves its work, and keeping it running as things change. This post is about that gap. Where general assistants deliver. Why company pilots stall. What doing it yourself really costs. And when you should not hire anyone at all.
+
+## General assistants already deliver for individuals
+
+Start with what works, because a lot does.
+
+In a study of more than 5,000 customer support agents, access to a generative AI assistant raised issues resolved per hour by 14% on average, and by 34% for novice and less skilled workers ([NBER](https://www.nber.org/papers/w31161)). That is a real gain on a well-scoped, repeated task.
+
+Staff are not waiting for permission either. A preliminary 2025 report from MIT's NANDA initiative found workers at 90% of the companies it studied using personal AI tools, while only 40% of those companies had bought an official subscription ([VentureBeat](https://venturebeat.com/ai/mit-report-misunderstood-shadow-ai-economy-booms-while-headlines-cry-failure)).
+
+So if the job is one person, one task, information they can paste in, and a person reading the result before it goes anywhere, a general assistant is often enough. Drafting. Summarising. A first pass at a spreadsheet. Rewriting a policy in plain English. Buy a team plan, write clear rules on what data may go in, and get on with it.
+
+## The trouble starts when the work belongs to the company
+
+Things change when the task stops being one person's and becomes the company's. Now the assistant has to read live data from several systems, act inside them, and be right often enough that people stop checking every line.
+
+That is where reliability drops. Salesforce AI Research tested leading agents on realistic CRM tasks. They succeeded about 58% of the time on single-turn tasks and about 35% when the work ran over several turns. They also showed near-zero awareness of what was confidential ([arXiv](https://arxiv.org/abs/2505.18878)). Those were 2025 models, and newer ones score higher. The shape of the problem is the point. Multi-step work on real business data is harder than a single question in a chat window.
+
+It shows up in results too. McKinsey's 2025 survey found 88% of organisations use AI somewhere, but only 39% report any impact on EBIT at the enterprise level ([McKinsey](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-state-of-ai-2025)). Using AI and getting value from it are different things.
+
+## Why pilots stall
+
+Pilots rarely stall because the model was too weak. S&P Global found that 42% of companies abandoned most of their AI initiatives in 2025, up from 17% the year before. Cost, privacy and security were among the top obstacles ([CIO Dive](https://www.ciodive.com/news/AI-project-fail-data-SPGlobal/742590/)). In 2024, Gartner predicted that at least 30% of generative AI projects would be dropped after proof of concept by the end of 2025, citing poor data quality, weak risk controls, rising costs and unclear business value ([Gartner](https://www.gartner.com/en/newsroom/press-releases/2024-07-29-gartner-predicts-30-percent-of-generative-ai-projects-will-be-abandoned-after-proof-of-concept-by-end-of-2025)).
+
+The reasons fall into six groups. None of them is about the model.
+
+### Data readiness
+
+The pilot ran on a clean export. The real data lives in five systems that disagree about what a customer, an order or an invoice is. An assistant reading untidy data gives untidy answers, with confidence. In RSM's 2025 survey of middle-market firms using generative AI, 41% named data quality as a top rollout challenge ([RSM](https://rsmus.com/newsroom/2025/middle-market-firms-rapidly-embracing-generative-ai-but-expertise-gaps-pose-risks-rsm-2025-ai-survey.html)).
+
+### Integration
+
+A demo can copy and paste. Production cannot. It needs live connections, the right permissions, and somewhere for the output to land. Microsoft tells its own customers to fix oversharing, meaning loose permissions and sensitive files anyone can reach, before rolling out Microsoft Copilot and agents ([Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/copilot/agent-essentials/agent-essentials-overview)).
+
+### Ownership
+
+The pilot was someone's side project. Nobody owns it in the org chart. When that person changes role or leaves, it quietly stops.
+
+### Approvals
+
+Who checks the output before it reaches a customer, a supplier or the ledger? OpenAI's own guide to building agents says actions that are sensitive, irreversible or high-stakes should trigger human oversight ([OpenAI](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf)). Someone has to decide which actions those are, and who signs off.
+
+### Change management
+
+The team keeps the old spreadsheet "just in case". The workflow does not change, so no time is saved. A tool nobody trusts becomes a second job.
+
+### Cost of running
+
+Agents cost more to run than chat. Anthropic's engineers report that agents use about four times the tokens of a chat, and multi-agent systems about fifteen times ([Anthropic](https://www.anthropic.com/engineering/multi-agent-research-system)). Gartner expects at least half of generative AI projects to overrun their budgets through 2028, because of poor architecture choices and a lack of operational know-how ([Gartner](https://www.gartner.com/en/articles/hype-cycle-for-genai)). Pilot volume hides this. Production volume does not.
+
+## The real cost of doing it yourself
+
+Doing it yourself is often the right call. It is not free. The licence is the cheap part.
+
+The real cost is the work around the model. Someone has to connect the systems, clean the data, write the rules, build tests, and fix things when a vendor changes an API or a model. Anthropic advises teams to start testing an agent with 20 to 50 tasks drawn from real failures, and warns that without that testing, problems get caught only in production ([Anthropic](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)).
+
+If that work goes to a new hire, budget for a full senior salary, before recruiting, benefits and tools ([Built In](https://builtin.com/salaries/us/data-engineer)). One person also cannot cover data, integration, testing and governance alone.
+
+If it goes to an existing manager in their spare evenings, the cost is hidden but real. It comes out of the job you hired them for.
+
+Then there is risk. An agent that emails the wrong customer or exposes the wrong file costs more than the project saved. Rules are also tightening. In California, businesses that use automated decision-making for significant decisions, such as lending, housing or employment, must comply with new rules from 1 January 2027 ([CPPA](https://cppa.ca.gov/announcements/2025/20250923.html)).
+
+Most mid-sized firms already know this. In the same RSM survey, 92% hit problems rolling out generative AI, and 70% of those using it said they need outside help to get full value from it ([RSM](https://rsmus.com/newsroom/2025/middle-market-firms-rapidly-embracing-generative-ai-but-expertise-gaps-pose-risks-rsm-2025-ai-survey.html)).
+
+Setting it up properly does not mean setting it up big. Anthropic's own advice is to find the simplest solution that works and add complexity only when it is needed ([Anthropic](https://www.anthropic.com/research/building-effective-agents)). We agree.
+
+## What to ask before you buy another AI tool
+
+Before the next subscription, answer these:
+
+1. **What exact task will it do, and who does that task today?**
+2. **Which data does it need?** Is that data correct, and is it in one place?
+3. **Which systems must it read from or write to?** Who grants that access?
+4. **What may it do without a person, and what needs approval?** Name the approver.
+5. **How will you know it works?** Pick 20 real examples to test it against before launch.
+6. **What will it cost to run at real volume**, not pilot volume?
+7. **Who owns it after launch?** What happens if they leave?
+8. **Can you export your data and leave?** Is the account in your company's name?
+
+If you cannot answer the first three, the tool is not your next purchase. The data and the process are.
+
+## When not to hire anyone
+
+Plainly, there are times you should not hire us or anyone else.
+
+- **Your team uses Claude, ChatGPT or Microsoft Copilot well.** People check the output, and the work is drafting and analysis. Keep going. Add a short policy on what data may go in.
+- **An agent you already run works.** It has an owner, someone checks it, and the cost is known. Keep it. Replacing a working tool is cost with no gain.
+- **There is no repeated process yet.** If the task happens twice a quarter, automation will not pay back. Fix the process first.
+- **The stakes are low and the action is reversible.** One person, one task, easy to undo. A general assistant is fine.
+
+## How AUXO helps
+
+When the work does belong to the company, we do the part around the model. We work in three steps, and you can start at any one.
+
+- **Analyze:** an honest read of your business and your data, before you spend on AI.
+- **Advise:** the right AI and data setup for your team, and a plan to get there.
+- **Build:** your data infrastructure and AI agent teams, set up end to end and handed over.
+
+We often do it with Claude or ChatGPT inside. You own what we build, and a person approves what goes out. We will also tell you when not to build, and that includes when not to replace something that already works.
+
+If you want a quick read first, take the [AUXO Score](/auxo-score/). It is 10 questions on how ready your data is for AI, with no sign-up.
+
+# Insights (full text)
+
+## Your numbers aren't messy. They're scattered.
+Topic: Data
+Takeaway: Most teams already hold the data they need. The work is making the systems agree, so one figure means one thing.
+
+Nobody's numbers are wrong, exactly. They just don't match. Sales reports one revenue figure, finance books another, and the board hears a third. That isn't a shortage of data. It is three systems that never agreed to mean the same thing. Collecting more won't fix it. Making the systems you already run reconcile will. Hand-fixing at month-end is the symptom. Agreement built in upstream is the cure, and it is also what any AI tool needs before its answers can be trusted.
+
+Where this fits: [Build](/how-it-works/). One source your team and your AI tools can rely on.
+
+---
+
+## The data already lives in systems you run.
+Topic: Data
+Takeaway: Between your CRM, your accounting system, your HR tool and your product data, the raw material is already there. The gap is connection, not collection.
+
+Before you buy another platform, open the cupboards. Your CRM knows the customers. Accounting knows the money. Your HR system knows the people, and your engineering tools know what was built and shipped. The raw material isn't missing. It has just never been connected. A new platform resets the clock, retrains everyone and bets the year on a migration. The quieter win is connecting what you already pay for, so it finally talks and your AI tools can read it.
+
+Where this fits: [Build](/how-it-works/). Built from the systems you already run, and yours to keep.
+
+---
+
+## Agree what a number means before you build the dashboard.
+Topic: Data
+Takeaway: Many reporting disputes aren't about the data. They're about whether 'active customer' or 'headcount' means the same thing to two teams.
+
+Most reporting fights aren't about numbers. They're about words. Is an "active customer" someone who paid this month, or someone who logged in? Does "headcount" include contractors? Give two teams one term and two definitions, and no dashboard will settle it. It will just show the disagreement faster. An AI assistant will do the same, with more confidence. The plain move works: agree the definitions, write them down, and let the data follow the words. Definitions first. Charts later.
+
+Where this fits: [Advise](/how-it-works/). Agreed definitions and owners, so one figure means one thing.
+
+---
+
+## The slow part isn't the model. It's the cleanup.
+Topic: Data
+Takeaway: Teams budget for the AI and forget the weeks spent reconciling what they already have. Get the foundation right and the rest is quick.
+
+Everyone budgets for the AI model and forgets the cleanup that comes first. The model is rarely the hard part. The hard part is connecting systems that were never built to talk to each other, and agreeing which record is right. Skip it and even a strong model gives wrong answers quickly. Do it once, cleaned, agreed and connected, and every project after it gets faster. The foundation isn't the dull part of the work. It's the part that makes the rest possible.
+
+Where this fits: [Analyze](/how-it-works/). Find what needs cleaning before you spend on AI.
+
+---
+
+## Your AI assistant can see what your staff can see.
+Topic: Data
+Takeaway: Workplace AI assistants answer from the files each person can already open. Loose sharing settings become AI answers. Fix access before rollout.
+Reference: Microsoft · Secure data foundation for Copilot (https://learn.microsoft.com/en-us/microsoft-365/copilot/secure-govern-copilot-foundational-deployment-guidance)
+
+Workplace AI assistants answer from the data each person is already allowed to open. That sounds safe until you look at how files are actually shared. The salary sheet in an open folder. The board pack shared with the whole company. Before, nobody found them. Now anyone can ask. Microsoft's own deployment blueprint for Copilot starts with fixing oversharing. The lesson holds for any assistant or agent: tidy who can see what first, then switch AI on.
+
+Where this fits: [Analyze](/how-it-works/). Check access and data readiness before AI goes live.
+
+---
+
+## Pick one system of record. Then reconcile to it.
+Topic: Data
+Takeaway: When two systems disagree, someone has to decide which one is right. Name it once for each kind of data, and reconcile everything else to it.
+
+Every company has a "whose number is right" argument. Customer counts differ between the CRM and billing. Headcount differs between HR and payroll. The fix isn't a better spreadsheet. It's a decision: for each kind of data, one system is the record, and everything else reconciles to it. Write that down, give it an owner, and check it on a schedule. Your team stops arguing about sources, and your AI tools stop reading two answers to the same question.
+
+Where this fits: [Advise](/how-it-works/). Clear owners and a named record for each kind of data.
+
+---
+
+## The board doesn't want a dashboard. It wants a decision.
+Topic: Reporting
+Takeaway: Reporting earns its place when it settles a question in the room, not when it adds one more screen no one opens between meetings.
+
+A board or investor update isn't there to show charts. It's there to decide something: approve this hire, cut that spend, defend a number next week. So build the report backwards from the decision it serves, and most of the clutter goes. The test for any chart is simple: did it settle a question, or open another tab nobody clicks? Keep the few figures that move the decision. Everything else is decoration you pay to maintain.
+
+Where this fits: [Build](/how-it-works/). Reporting that holds up when the board, investors or auditors ask hard questions.
+
+---
+
+## One source of truth beats five tidy ones.
+Topic: Reporting
+Takeaway: Every clean report built on its own copy of the data is one more version of the truth to argue about. Agree the figure once, upstream.
+
+Five tidy reports, each built on its own copy of the data, are five versions of the truth. They agree until the quarter that matters. Then they split, and the argument moves into a long email thread that never quite ends. One number everyone reads from beats five neat ones nobody fully trusts. Agree the figure once, upstream, and point every report and every AI tool at the same place. Reconciliation should be a design choice made once, not a monthly ritual.
+
+Where this fits: [Build](/how-it-works/). One source your team and your AI tools can rely on.
+
+---
+
+## Sustainability is becoming board reporting, not a side report.
+Topic: Reporting
+Takeaway: IFRS S1 and S2 treat sustainability figures as information investors use to make decisions. Where they apply, those numbers need the same care as the accounts.
+Reference: IFRS S1 General Requirements (https://www.ifrs.org/issued-standards/ifrs-sustainability-standards-navigator/ifrs-s1-general-requirements/)
+
+For years, sustainability figures sat in a booklet nobody audited. The ISSB standards, IFRS S1 and S2, treat them as information investors use to decide where money goes. They took effect for reporting periods from 1 January 2024, and each country decides whether to adopt them. Even where they don't apply yet, large customers and lenders ask similar questions. The teams that cope well stop treating these numbers as a yearly scramble. They source them like revenue: once, traceably, from the systems of record.
+
+Where this fits: [Build](/how-it-works/). Numbers sourced once and traced back, ready when investors ask.
+
+---
+
+## A good pack answers the next question before it's asked.
+Topic: Reporting
+Takeaway: Investors don't reward pretty slides. They reward numbers they can trace to source without a follow-up email.
+
+The moment that tests a report isn't the meeting. It's the question twenty minutes later: where did this come from? Does it tie to the accounts? What changed since last quarter? A pack that answers those in one click earns trust on the spot. One that triggers a week of reconciliation loses it just as fast. Write for the question behind the question, and a funding round or an audit stops being an event you brace for. The answers are already there.
+
+Where this fits: [Build](/how-it-works/). Numbers that trace back to source and hold up under questions.
+
+---
+
+## Say what your AI does, and no more.
+Topic: Reporting
+Takeaway: Regulators already treat false AI claims as misleading statements. Describe the AI you actually run, in plain terms you can back up.
+Reference: SEC · AI washing charges (2024) (https://www.sec.gov/newsroom/press-releases/2024-36)
+
+In March 2024 the US SEC settled charges against two investment advisers for false and misleading statements about their use of AI. The SEC chair called it "AI washing". The lesson reaches well beyond finance. Every claim about AI in a deck, on a website or in an investor update is a statement someone may check. Describe what the AI actually does, on what data, and who approves its output. If you can't show it working, don't claim it.
+
+Where this fits: [Analyze](/how-it-works/). An honest read of what your data and AI can do today.
+
+---
+
+## Due diligence is a data test.
+Topic: Reporting
+Takeaway: Whether you are raising, selling or signing a large customer, the other side will ask for numbers. How fast you can trace them says a lot.
+
+Every funding round, acquisition and large contract ends in the same place: a data room and a list of questions. How many customers renewed? What does each one cost to serve? Does the forecast tie to the accounts? A team with one traced source answers in a day. A team stitching spreadsheets answers in weeks, and the delay itself becomes a concern. Get the data ready before anyone asks, and due diligence becomes a check, not a crisis.
+
+Where this fits: [Analyze](/how-it-works/). See where your numbers would hold up, and where they wouldn't.
+
+---
+
+## Forecasts are for planning, not for promising.
+Topic: Forecasting
+Takeaway: A range you can defend to an investor beats a single confident number you can't. Show the assumptions, and the conversation changes.
+
+A single confident number invites an argument you can't win, because everyone knows a point estimate will be wrong. A range you can defend, with the assumptions in plain view, turns a forecast into a planning tool. The honesty is the point, not the apology. Investors and boards trust the team that shows its working far more than the one hoping its single number lands. The same goes for any forecast an AI tool produces: ask what it assumed. Forecast to plan, not to promise.
+
+Where this fits: [Build](/how-it-works/). Forecasts and reports that hold up under questions.
+
+---
+
+## Anchor your forecast to something others can check.
+Topic: Forecasting
+Takeaway: A forecast built only on internal hopes is easy to argue down. Tie the key assumptions to sources an investor or lender can check for themselves.
+
+Every forecast rests on a few assumptions that do most of the work: how fast you hire, how many customers renew, what prices do, what a supplier will charge. If those come from gut feel, the first sharp question takes them apart. If each one points to a source someone else can check, such as your own history, a signed contract or a published benchmark, the forecast is much harder to wave away. Name the source next to each assumption. It takes minutes and saves meetings.
+
+Where this fits: [Build](/how-it-works/). Forecasts tied to sources your board and investors can check.
+
+---
+
+## Plan in ranges, pressure-test with scenarios.
+Topic: Forecasting
+Takeaway: One line on a chart hides the risk. A base case, a downside, and what would have to be true for each turns a forecast into a decision tool.
+
+One line on a chart tells you what someone hopes. A base case, a downside, and a note on what would have to be true for each tell you what to do when things change, which they will. This isn't hedging. It answers the question that matters before you commit money or people: what breaks this plan, and how would we see it coming? It works for a hiring plan, a cash runway or a product launch alike. Plan in ranges. Test with scenarios.
+
+Where this fits: [Build](/how-it-works/). Forecasts that show the range and the assumptions behind it.
+
+---
+
+## Forecast the cash, not just the revenue.
+Topic: Forecasting
+Takeaway: Bookings look good on a slide. Payment terms, late invoices and timing of costs decide whether the quarter actually works.
+
+Revenue writes the headline. Cash decides whether the quarter works. A forecast that tracks bookings but waves through payment terms, late invoices and the timing of payroll and suppliers shows how the business looks in a photo, not how it behaves in motion. Most of these figures already sit in your billing and accounting systems, so they don't need to be guessed. Model the money moving in and out, week by week. That is the number that tells you how much runway you really have.
+
+Where this fits: [Build](/how-it-works/). Forecasts grounded in cash, built from the systems you already run.
+
+---
+
+## AI running costs are a forecast input, not a footnote.
+Topic: Forecasting
+Takeaway: Agents use far more model capacity than a chat window. Anthropic reports about 4 times the tokens for agents and about 15 times for multi-agent systems.
+Reference: Anthropic · Multi-agent research system (https://www.anthropic.com/engineering/multi-agent-research-system)
+
+AI budgets usually count the licence and forget the running cost. Agents read more, think in more steps and call more tools than a chat window. Anthropic's own engineering write-up reports that agents typically use about 4 times the tokens of a chat, and multi-agent systems about 15 times. That can be worth it for valuable work, and wasteful for simple work. So model usage like any other variable cost: by task, by volume, by month. Then pick the simplest setup that does the job.
+
+Where this fits: [Advise](/how-it-works/). The right AI setup for each task, with the running costs in view.
+
+---
+
+## Put the regulatory dates in the plan.
+Topic: Forecasting
+Takeaway: New rules on automated decisions come with fixed start dates. California's apply from 1 January 2027. Plan the work before the deadline, not at it.
+Reference: California Privacy Protection Agency · ADMT rules (https://cppa.ca.gov/announcements/2025/20250923.html)
+
+Rules on AI and automated decisions now arrive with dates attached. California's privacy regulator says businesses that use automated decision-making technology to make significant decisions must meet its new requirements from 1 January 2027. Other places have their own timelines. Each one means work: listing the tools, writing notices, checking how decisions are made. That work takes people and weeks. Put the dates in the plan and the budget now, so the deadline is a checkpoint and not a scramble.
+
+Where this fits: [Advise](/how-it-works/). Governance planned around the dates that apply to you.
+
+---
+
+## AI nobody checks is a liability, not an asset.
+Topic: AI
+Takeaway: Put automation where the work is repetitive and reversible, and keep a person signing off where the stakes are real. That's how it survives an audit.
+Reference: NIST AI Risk Management Framework (https://www.nist.gov/itl/ai-risk-management-framework)
+
+Automation earns its keep where the work is repetitive and a mistake is cheap to undo. Where the stakes are real, keep a person signing off, and keep a clear record of what ran, on what data, and why. NIST's AI Risk Management Framework, which is free and voluntary, builds this into its Govern and Measure functions. It's also the version that survives an audit and the version your own team trusts. Unchecked AI doesn't save time. It postpones the day someone has to explain what it did.
+
+Where this fits: [Build](/how-it-works/). AI agents carry the routine work. A person approves what matters.
+
+---
+
+## Start where a mistake is cheap.
+Topic: AI
+Takeaway: The first thing you automate shouldn't be a payment, a refund or a hiring decision. Earn trust on low-stakes, reversible work first.
+Reference: OpenAI · A practical guide to building agents (https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf)
+
+The first thing you automate shouldn't be the thing that can't be undone. Start where being wrong is cheap: drafting, sorting, matching, routine reports. Let a track record build before an agent touches anything that bites back. OpenAI's own guide to building agents says sensitive, irreversible or high-stakes actions, such as refunds or payments, should go to a person until the agent has proved reliable. By the time you reach the work that matters, the system has earned some trust. Ambition is fine. Sequence it.
+
+Where this fits: [Build](/how-it-works/). Agents start on routine work, and a person approves what goes out.
+
+---
+
+## Know which of your AI would count as 'high-risk'.
+Topic: AI
+Takeaway: Tools that sort CVs or score credit sit in the EU AI Act's high-risk group. Treat them differently from a drafting assistant.
+Reference: EU AI Act (https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)
+
+Not all AI carries the same weight. A tool that drafts an email is housekeeping. A tool that sorts job applicants or scores someone's credit is something else. The EU AI Act names CV-sorting software and credit scoring as examples of high-risk uses, with duties such as human oversight and activity logs. So sort your AI by consequence, not by how clever it feels. Keep it light where the output is a suggestion. Add full governance, and a person's decision, where it decides who gets through the door.
+
+Where this fits: [Advise](/how-it-works/). Clear rules for each AI use, matched to what is at stake.
+
+---
+
+## AI you can't see, you can't govern.
+Topic: AI
+Takeaway: Most teams run more AI than leadership knows, spread across personal accounts, plugins and vendor features. You can't set rules for what you haven't listed.
+Reference: NIST AI Risk Management Framework (https://www.nist.gov/itl/ai-risk-management-framework)
+
+The AI that should worry you usually isn't the one you approved. It's the personal chatbot account someone pastes customer data into, the plugin someone switched on, the vendor feature nobody logged. You can't govern what you haven't listed, which is why NIST's framework includes a Map function: know what is running, on whose data, deciding what. Then write the policy. The list is dull, and it is the cheapest control you will ever build. Visibility first. Rules second.
+
+Where this fits: [Advise](/how-it-works/). Know what AI runs, on what data, and who owns it.
+
+---
+
+## The EU AI Act can reach a desk outside the EU.
+Topic: AI
+Takeaway: If your AI's output is used in the EU, you can be in scope even with no EU office. The rules follow your customers, not your address.
+Reference: EU AI Act · Article 2 (scope) (https://artificialintelligenceact.eu/article/2/)
+
+"We're not an EU company" is no longer the end of the sentence. Article 2 of the EU AI Act covers providers and deployers based outside the EU where the output of their AI system is used in the EU. A team in Dubai, New York or London can be in scope without an office in Brussels. If you have European customers, users or staff, the rules follow your output, not your address. Map where your AI's results land before you grow, not after.
+
+Where this fits: [Advise](/how-it-works/). AI set up with the cross-border rules in view from the start.
+
+---
+
+## Govern, Map, Measure, Manage. Borrow the checklist.
+Topic: AI
+Takeaway: You don't need to invent AI governance. NIST's four functions give a free, recognised structure that regulators and investors already understand.
+Reference: NIST AI Risk Management Framework (https://www.nist.gov/itl/ai-risk-management-framework)
+
+AI governance sounds like a committee and a year you don't have. It doesn't have to start that way. NIST's AI Risk Management Framework is free, voluntary, and built on four functions anyone can adopt: Govern (who is accountable), Map (what is running), Measure (does it work) and Manage (act on what you find). A recognised framework also travels well. An auditor, investor or enterprise customer knows the terms already. Borrow the structure, then fit it to how your team already works.
+
+Where this fits: [Advise](/how-it-works/). Governance built on a recognised framework, sized to your team.
+
+---
+
+## Compliance is cheaper as a habit than a scramble.
+Topic: Compliance
+Takeaway: The real cost isn't the filing or the audit. It's the week your best people lose rebuilding the same evidence before every deadline.
+
+The expensive part of compliance was never the filing. It's the week your best people lose rebuilding the same evidence by hand before every audit, investor review or customer security questionnaire. Build the evidence into how the business runs: access logs, approvals, data lists, kept as the work happens. Then the deadline stops being something anyone dreads. It becomes a date the work is already done by. The goal isn't heroics near the cut-off. It's arriving at it calm, with everything where a reviewer can find it.
+
+Where this fits: [Advise](/how-it-works/). Clear rules for your data and AI, so you're ready when auditors, regulators or investors ask.
+
+---
+
+## AI in hiring has its own rules.
+Topic: Compliance
+Takeaway: In New York City, an automated hiring tool needs a bias audit within the past year, published results and notice to candidates. Check the rules where you hire.
+Reference: NYC · Automated employment decision tools (https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page)
+
+Using AI to screen applicants is not the same as using it to draft an email. New York City has enforced its law on automated employment decision tools since July 2023. An employer can't use one unless it has had a bias audit within the past year, the results are public, and candidates get notice. The EU AI Act treats CV-sorting tools as high-risk too. Rules differ by place, so check them with your advisers. And keep a person making every hiring decision.
+
+Where this fits: [Marketplace](/marketplace/). Hiring tools set up with clear rules, and a person makes every hiring decision.
+
+---
+
+## Know where each AI tool sends your data.
+Topic: Compliance
+Takeaway: Every AI tool you add is a new place your data can go. Before you sign, know where it is stored, who can see it, and whether it trains a model.
+
+Signing up for an AI tool takes a minute. Knowing what it does with your data takes longer, and that is the part that matters. Where is the data stored? Who at the vendor can see it? Is it used to train their models? Can you export it and leave? A finance team pasting invoices, or a recruiter uploading CVs, is sharing regulated data with a third party. Ask the four questions before the contract, not after the first customer asks you.
+
+Where this fits: [Marketplace](/marketplace/). Every listed tool is checked for how it handles your data.
+
+---
+
+## The audit trail should be a by-product, not a project.
+Topic: Compliance
+Takeaway: The EU AI Act expects high-risk systems to log activity so results can be traced. If you have to reconstruct the trail, you never really had it.
+Reference: EU AI Act (https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)
+
+When someone asks "show us how this decision was made", the answer should already exist. For high-risk systems, the EU AI Act lists logging of activity so results can be traced. Auditors, enterprise customers and investors increasingly expect the same of any AI that touches money or people. If your answer is a project to rebuild the trail, you didn't have a trail. Record who did what, when, on what data and with whose approval, as the work happens. The best audit prep is the one you never have to do.
+
+Where this fits: [Build](/how-it-works/). Every agent run recorded, with the person who approved it.
+
+---
+
+## Customer and staff data is regulated data.
+Topic: Compliance
+Takeaway: CRM records, payroll files and CVs are personal data under laws such as the UAE PDPL and the GDPR. AI tools that read them are covered too.
+Reference: UAE Personal Data Protection Law (https://u.ae/en/about-the-uae/digital-uae/data/data-protection-laws)
+
+Most teams under-rate how much personal data they hold. CRM histories, payroll files, CVs and support tickets are all personal data. In the UAE, the Personal Data Protection Law covers processing inside or outside the country, with rules on consent and cross-border transfer. In Europe and the UK, the GDPR sets similar duties. When an AI tool reads that data, those rules come with it. Know what personal data you hold, why, and who and what can touch it, before you connect an AI tool to it.
+
+Where this fits: [Analyze](/how-it-works/). Know what personal data you hold before AI reads it.
+
+---
+
+## Data crosses borders. So do the rules.
+Topic: Compliance
+Takeaway: Personal data leaving Europe needs a legal basis for the transfer. Teams split across the UAE, the US and Europe should map where data flows.
+Reference: European Commission · International data transfers (https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/rules-international-data-transfers_en)
+
+A team in London, a vendor in California and an office in Dubai can mean three sets of data rules on one customer record. Personal data leaving Europe needs a transfer tool, such as an adequacy decision or standard contractual clauses. The UAE's data law has its own rules on cross-border transfer. AI tools add another hop, because prompts and files often go to a model hosted somewhere else. The plain first step is a data map: what is held where, under which law, and which tools send it on.
+
+Where this fits: [Advise](/how-it-works/). Data flows mapped, so every tool fits the rules that apply.
+
+---
+
+## Own the system, not just the slides.
+Topic: Ownership
+Takeaway: If your team can't run it the day after the outside help leaves, you didn't buy a capability. You rented a presentation.
+
+If your team can't run it the morning after the outside help leaves, you didn't buy a capability. You rented a convincing presentation. Real ownership means the code, the setup, the accounts, the documentation and the know-how all stay on your side, in your company's name. No retainer to renew, no support ticket every time a number or an agent rule needs changing. The point of doing the work properly is to leave you more capable, not more dependent.
+
+Where this fits: [Build](/how-it-works/). Set up end to end and handed over. Built to last, and yours to keep.
+
+---
+
+## No lock-in means no black box.
+Topic: Ownership
+Takeaway: A system you can't see inside is a system you don't really own. If you can't explain how a number or an AI output was produced, you can't defend it.
+Reference: NIST AI Risk Management Framework (https://www.nist.gov/itl/ai-risk-management-framework)
+
+Lock-in isn't only the contract you can't leave. It's the quieter trap where nobody on your side can explain how the thing works: an agent whose rules only the vendor knows, a pipeline nobody internal has read. NIST's AI Risk Management Framework treats explainability as part of what makes AI trustworthy. Real ownership means you can trace any number or AI output back to its source and explain it to an auditor or investor without calling anyone. If you can't see inside it, you don't own it.
+
+Where this fits: [Build](/how-it-works/). Systems you can see into, explain and run yourself.
+
+---
+
+## The best fix rarely means ripping things out.
+Topic: Ownership
+Takeaway: Rip-and-replace resets the clock and bets the outcome on a migration. The quieter win is making what you already pay for work together.
+
+Rip-and-replace sounds decisive in the meeting and rarely is in practice. It resets the clock, retrains everyone, and stakes the outcome on a migration going smoothly. The better win is usually to build on what you already run, your CRM, your accounting, your HR and engineering tools, and make them work together. If an AI tool or agent you already have works, keep it. Your people keep the tools they know, and a new platform becomes the last resort instead of the first move.
+
+Where this fits: [Advise](/how-it-works/). We'll tell you when not to build, and when not to replace.
+
+---
+
+## Documentation is the deliverable, not the afterthought.
+Topic: Ownership
+Takeaway: A system isn't really handed over until someone on your team can change it from the written word alone. Write it for them, not for engineers.
+
+A working system with no readable documentation is a single point of failure. It runs until the one person who understands it moves on. Handover isn't done when the code runs or the agent sends its first draft. It's done when someone on your team can change it from the written word alone. Write it plainly, for the people who will run it day to day: what it does, where the data comes from, who approves what, and how to change a rule. That document is the difference between a capability you keep and one that leaves.
+
+Where this fits: [Build](/how-it-works/). Plain-English documentation and training, so the know-how stays with your team.
+
+---
+
+## If you can't explain the number, you can't defend it.
+Topic: Ownership
+Takeaway: Regulators, auditors and investors increasingly expect a traceable answer, not a confident one. Explainability is what holds up under questioning.
+Reference: ICO · Guidance on AI and data protection (https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/)
+
+The hardest moment for any number isn't producing it. It's being asked, live, exactly how you got it. Regulators are pushing the same way. The UK's data protection regulator, the ICO, builds its AI guidance around accountability, transparency and accuracy. In practice, every figure or AI output you put in front of a lender, an auditor or a board should trace back to its source and its logic. A confident answer you can't unpack is a liability. A traceable one ends the conversation.
+
+Where this fits: [Build](/how-it-works/). Systems where every number and every AI output traces back to its source.
+
+---
+
+## Own the tests, not just the tool.
+Topic: Ownership
+Takeaway: An AI agent is only as trustworthy as the checks you run on it. Anthropic suggests starting with 20 to 50 simple tasks drawn from real failures.
+Reference: Anthropic · Demystifying evals for AI agents (https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)
+
+Most teams test an AI agent once, like it, and switch it on. Then a model update or a new data source changes its behaviour, and nobody notices until a customer does. The fix is a set of checks you own: real tasks, with known good answers, run every time something changes. Anthropic's guidance on evaluating agents says 20 to 50 simple tasks drawn from real failures is a good start. Keep those tests in your name, next to the agent. Then you can prove it still works, not just insist it does.
+
+Where this fits: [Build](/how-it-works/). Agents handed over with their tests, and optional managed upkeep to keep them tuned.

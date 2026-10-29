@@ -1,0 +1,1 @@
+import{t}from"./track.Bab4mGaX.js";document.addEventListener("astro:page-load",()=>{document.title.startsWith("Page not found")&&t("page_not_found",{page_path:location.pathname+location.search,page_location:location.href,error_type:"404"})});
